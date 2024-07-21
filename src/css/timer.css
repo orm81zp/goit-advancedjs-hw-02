@@ -1,0 +1,64 @@
+.section-timer {
+  max-width: 355px;
+}
+
+.timer-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.form-field {
+  padding: 8px 8px 8px 16px;
+  border: 1px solid var(--input-border-color);
+  transition: border-color var(--transition-property);
+  border-radius: 4px;
+  width: 100%;
+  color: var(--text);
+  outline: none;
+}
+
+input.form-field {
+  height: 40px;
+}
+
+.form-field:hover {
+  border-color: var(--input-border-hover-color);
+}
+
+.form-field:focus {
+  border-color: var(--input-border-color);
+}
+.form-field:focus {
+  border-color: var(--primary);
+}
+
+.timer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.timer .field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.timer .field .value {
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 4%;
+}
+
+.timer .field .label {
+  font-size: 16px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}

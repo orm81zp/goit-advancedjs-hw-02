@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('./reset.css');
-/* @import url('./timer.css'); */
+@import url('./timer.css');
 /* @import url('./snackbar.css'); */
 
 :root {
@@ -18,6 +18,8 @@
   --white: #ffffff;
   --primary: #4e75ff;
   --primary-hover: #6c8cff;
+  --disabled: #CFCFCF;
+  --disabled-text: #989898;
   --text: #2e2f42;
   --input-border-color: #808080;
   --input-border-hover-color: #000000;
@@ -75,16 +77,29 @@ a:focus {
   border: 1px solid var(--primary);
   border-radius: 8px;
   min-width: 95px;
+  height: 40px;
   color: var(--white);
   transition: color var(--transition-property),
     background-color var(--transition-property),
     border-color var(--transition-property);
 }
 
+.button:disabled {
+  background-color: var(--disabled);
+  border: 1px solid var(--disabled);
+  color: var(--disabled-text);
+}
+
 .button:hover,
 .button:focus {
   background-color: var(--primary-hover);
   border: 1px solid var(--primary-hover);
+}
+
+.button:disabled:hover,
+.button:disabled:focus {
+  background-color: var(--disabled);
+  border: 1px solid var(--disabled);
 }
 
 header {
