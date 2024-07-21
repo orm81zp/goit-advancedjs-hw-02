@@ -11,31 +11,6 @@
   margin-bottom: 32px;
 }
 
-.form-field {
-  padding: 8px 8px 8px 16px;
-  border: 1px solid var(--input-border-color);
-  transition: border-color var(--transition-property);
-  border-radius: 4px;
-  width: 100%;
-  color: var(--text);
-  outline: none;
-}
-
-input.form-field {
-  height: 40px;
-}
-
-.form-field:hover {
-  border-color: var(--input-border-hover-color);
-}
-
-.form-field:focus {
-  border-color: var(--input-border-color);
-}
-.form-field:focus {
-  border-color: var(--primary);
-}
-
 .timer {
   display: flex;
   flex-direction: row;
